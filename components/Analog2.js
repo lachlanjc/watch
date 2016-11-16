@@ -10,13 +10,10 @@ class Analog extends React.Component {
     let size = 64
     let c = size / 2
     let hn = hour % 12 * 30 + min / 2
-    let mn = min * 6 + sec * .1
+    let mn = min * 6 + sec * 0.1
     let sn = (secs + 1) * 6
 
     let styles = {
-      svg: {
-        maxHeight: '100%'
-      },
       hour: {
         fill: 'none',
         stroke: 'currentcolor'
@@ -42,9 +39,7 @@ class Analog extends React.Component {
       sec: {
         fill: 'none',
         stroke: '#ff4136',
-        strokeWidth: .5,
-        WebkitTransformOrigin: c + 'px ' + c + 'px',
-        WebkitTransform: 'rotate(' + sn + 'deg)',
+        strokeWidth: 0.5,
         transform: 'rotate(' + sn + 'deg)',
         transformOrigin: c + 'px ' + c + 'px',
         transitionProperty: 'transform',
@@ -58,8 +53,7 @@ class Analog extends React.Component {
 
     return (
       <div>
-        <svg viewBox={[0, 0, size, size].join(' ')}
-          style={styles.svg}>
+        <svg viewBox={[0, 0, size, size].join(' ')}>
           <Face size={size} />
           <g
             transform={'rotate(' + hn + ' ' + c + ' ' + c + ')'}
@@ -112,7 +106,7 @@ class Analog extends React.Component {
           <circle
             cx={c}
             cy={c}
-            r={.75}
+            r={0.75}
             fill='#000' />
         </svg>
       </div>
@@ -124,7 +118,7 @@ class Analog extends React.Component {
 Analog.propTypes = {
   hour: React.PropTypes.number,
   min: React.PropTypes.number,
-  sec: React.PropTypes.number,
+  sec: React.PropTypes.number
 }
 
 export default Analog
