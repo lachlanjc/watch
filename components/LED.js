@@ -1,6 +1,6 @@
 
 import React from 'react'
-import css from 'next/css'
+import css from 'cxs'
 
 const LED = ({
   number = 0,

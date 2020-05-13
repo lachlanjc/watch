@@ -1,6 +1,7 @@
 
-import React, { PropTypes } from 'react'
-import css from 'next/css'
+import React from 'react'
+import PropTypes from 'prop-types'
+import css from 'cxs'
 import { padStart } from 'lodash'
 
 import LED from './LED'
@@ -34,7 +35,7 @@ Digital.propTypes = {
 
 const cx = {
   digital: {
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif',
+    fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif',
     fontWeight: 'bold',
     fontSize: 20
   },

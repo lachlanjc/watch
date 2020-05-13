@@ -1,6 +1,7 @@
 
-import React, { PropTypes } from 'react'
-import css from 'next/css'
+import React from 'react'
+import PropTypes from 'prop-types'
+import css from 'cxs'
 import Face from './Face'
 
 const Analog = ({ time }) => {

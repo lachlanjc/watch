@@ -1,18 +1,16 @@
 
-import React, { Component, PropTypes } from 'react'
-import css from 'next/css'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import css from 'cxs'
 import { toString, upperFirst } from 'lodash'
 import Meta from './Meta'
 
-/* eslint-disable no-unused-vars */
 import Analog from './Analog'
 import Digital from './Digital'
-/* eslint-enable no-unused-vars */
 
 let id = false
 
 class Watch extends Component {
-
   constructor () {
     super()
     this.state = {
@@ -55,10 +53,10 @@ class Watch extends Component {
     if (this.props.digital) body = <Digital time={time} />
 
     return (
-      <div className={css(cx.container)}>
+      <main className={css(cx.container)}>
         <Meta />
-        <div className={css(cx.watch)} children={body} />
-      </div>
+        <article className={css(cx.watch)} children={body} />
+      </main>
     )
   }
 }
@@ -78,7 +76,7 @@ const cx = {
     boxSizing: 'border-box',
     width: '100%',
     height: '100vh',
-    fontFamily: 'sans-serif',
+    fontFamily: 'system-ui, sans-serif',
     color: 'white',
     backgroundColor: '#111'
   },

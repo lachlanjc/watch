@@ -1,6 +1,6 @@
 
 import React from 'react'
-import css from 'next/css'
+import css from 'cxs'
 
 const Face = ({ size, ...props }) => {
   let c = size / 2

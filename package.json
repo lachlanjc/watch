@@ -5,8 +5,12 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "lodash": "^4.x",
-    "next": "latest"
+    "cxs": "^6.2.0",
+    "lodash": "^4.17.15",
+    "next": "^9.4.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "scripts": {
     "dev": "next",
@@ -17,7 +21,7 @@
   "contributors": [
     {
       "name": "Lachlan Campbell",
-      "url": "https://lachlanjc.me/"
+      "url": "https://lachlanjc.com/"
     }
   ]
 }
